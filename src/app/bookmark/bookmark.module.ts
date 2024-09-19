@@ -6,13 +6,15 @@ import { LandingPageComponent } from './pages/landing-page/landing-page.componen
 import { SharedModule } from '../shared/shared.module';
 import { HeroComponent } from './components/hero/hero.component';
 import { FeaturesComponent } from './components/features/features.component';
+import { BrowsersComponent } from './components/browsers/browsers.component';
 
 
 @NgModule({
   declarations: [
     LandingPageComponent,
     HeroComponent,
-    FeaturesComponent
+    FeaturesComponent,
+    BrowsersComponent
   ],
   imports: [
     CommonModule,

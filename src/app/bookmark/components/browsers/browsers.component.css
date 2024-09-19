@@ -1,0 +1,58 @@
+.browsers{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+
+    padding-top: 100px;
+    
+}
+
+.browsers .browser{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.browser .browser__details{
+    padding: 40px 25px;
+    text-align: center;
+}
+
+.browser .browser__details .img{
+    margin-bottom: 30px;
+}
+
+.browser .browser__details .name{
+    color: var(--very-dark-blue);
+}
+
+.browser .browser__details .version{
+    color: var(--grayish-blue);
+    font-size: .9rem;
+    margin-top: 10px;
+}
+
+.browser .browser__download{
+    padding: 25px;
+    position: relative;
+    border-top: 5px dotted rgba(0, 0, 0, 0.1);
+}
+
+.browser .browser__download .btn{
+    border: none;
+    outline: none;
+    background-color: var(--soft-blue);
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.browser--firefox{
+    margin-top: 40px;
+}
+
+.browser--opera{
+    margin-top: 80px;
+}

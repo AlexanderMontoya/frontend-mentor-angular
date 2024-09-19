@@ -1,0 +1,45 @@
+.navbar{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: white;
+}
+
+.navbar__content{
+    width: 80%;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 50px 0px;
+}
+
+.navbar__content .logo{
+
+
+}
+
+.navbar__content .links{
+    display: flex;
+    gap: 40px;
+}
+.navbar__content .links .links__item{
+    list-style: none;
+}
+
+.navbar__content .links .links__item .link{
+    text-decoration: none;
+    color: var(--very-dark-blue);
+}
+
+.navbar__content .links .links__item .link--login{
+    padding: 10px 20px;
+    background-color: var(--soft-red);
+    font-weight: 500;
+    color: white;
+    border-radius: 5px;
+}

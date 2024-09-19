@@ -1,0 +1,28 @@
+.main{
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.main .section{
+    width: 80%;
+    margin: auto;
+
+    margin-bottom: 150px;
+}
+
+.main .section .section__subTitle{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--very-dark-blue);
+}
+
+.main .section .section__paragraph{
+    width: 550px;
+    margin: auto;
+    text-align: center;
+    color: var(--grayish-blue);
+    
+    margin-top: 20px;
+    margin-bottom: 30px;
+}

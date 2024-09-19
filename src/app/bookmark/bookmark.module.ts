@@ -1,0 +1,24 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+import { BookmarkRoutingModule } from './bookmark-routing.module';
+import { LandingPageComponent } from './pages/landing-page/landing-page.component';
+import { SharedModule } from '../shared/shared.module';
+import { HeroComponent } from './components/hero/hero.component';
+import { FeaturesComponent } from './components/features/features.component';
+
+
+@NgModule({
+  declarations: [
+    LandingPageComponent,
+    HeroComponent,
+    FeaturesComponent
+  ],
+  imports: [
+    CommonModule,
+    BookmarkRoutingModule,
+
+    SharedModule
+  ]
+})
+export class BookmarkModule { }

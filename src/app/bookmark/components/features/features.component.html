@@ -1,0 +1,33 @@
+<div class="features">
+    <div class="features__btns">
+        <button class="btn_feature" [class.selected]="index_selected == 0"
+        (click)="selectedFeature(0)">
+            Simple Bookmarking
+        </button>
+        <button class="btn_feature" [class.selected]="index_selected == 1"
+        (click)="selectedFeature(1)">
+            Speedy Searching
+        </button>
+        <button class="btn_feature" [class.selected]="index_selected == 2"
+        (click)="selectedFeature(2)">
+            Easy Sharing
+        </button>
+    </div>
+
+    <div class="feature" *ngIf="feature">
+        <div class="feature__ilustration">
+            <div class="ilustration">
+                <div class="ilustration__content">
+                    <img [src]="feature.img" [alt]="feature.feature" class="img" width="200">
+                    <img src="./assets/images/blob-blue.svg" class="blob" alt="" width="150">
+                </div>
+            </div>
+        </div>
+
+        <div class="feature__texts">
+            <h3 class="f_title">{{ feature.description_title }}</h3>
+            <p class="f_paragraph">{{ feature.description_paragraph }}</p>
+            <a href="#" class="f_btn">More info</a>
+        </div>
+    </div>
+</div>

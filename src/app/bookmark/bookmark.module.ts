@@ -7,6 +7,7 @@ import { SharedModule } from '../shared/shared.module';
 import { HeroComponent } from './components/hero/hero.component';
 import { FeaturesComponent } from './components/features/features.component';
 import { BrowsersComponent } from './components/browsers/browsers.component';
+import { QuestionsComponent } from './components/questions/questions.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { BrowsersComponent } from './components/browsers/browsers.component';
     LandingPageComponent,
     HeroComponent,
     FeaturesComponent,
-    BrowsersComponent
+    BrowsersComponent,
+    QuestionsComponent
   ],
   imports: [
     CommonModule,

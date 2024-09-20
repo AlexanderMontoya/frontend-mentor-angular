@@ -1,4 +1,5 @@
-<shared-navbar></shared-navbar>
+<shared-navbar [navbarState]="navbarOpen" (changeState)="changeState()"></shared-navbar>
+<shared-navbar-responsive [navbarState]="navbarOpen" (changeState)="changeState()"></shared-navbar-responsive>
 <main class="main">
     <bookmark-hero></bookmark-hero>
     <section class="section">

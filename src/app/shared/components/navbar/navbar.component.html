@@ -1,4 +1,4 @@
-<header class="navbar">
+<header class="navbar responsive">
     <nav class="navbar__content">
         <div class="logo">
             <a routerLink="/"><img src="./assets/images/logo-bookmark.svg" alt="Logo Bookmark" width="150"></a>
@@ -10,7 +10,7 @@
             <li class="links__item"><a href="#" class="link">CONTACT</a></li>
             <li class="links__item"><a href="#" class="link link--login">LOGIN</a></li>
         </ul>
-        <button class="btn-navbar">
+        <button class="btn-navbar" (click)="openNavbar()" *ngIf="!navbarState">
             <img src="./assets/images/icon-hamburger.svg" alt="" width="20">
         </button>
     </nav>

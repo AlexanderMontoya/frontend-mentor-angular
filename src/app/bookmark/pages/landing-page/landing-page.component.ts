@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./landing-page.component.css']
 })
 export class LandingPageComponent {
+  public navbarOpen:boolean = false;
 
+  public changeState(){
+    this.navbarOpen = !this.navbarOpen
+  }
 }

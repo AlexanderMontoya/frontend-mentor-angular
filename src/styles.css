@@ -17,6 +17,7 @@
     /* Neutral */
     --grayish-blue: hsl(229, 8%, 60%);
     --very-dark-blue: hsl(229, 31%, 21%);
+    --very-dark-blue-50: hsla(229, 31%, 21%, 0.87);
 
 }
 

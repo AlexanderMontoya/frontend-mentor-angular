@@ -1,0 +1,89 @@
+.navbar-responsive{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 150;
+    background-color: var(--very-dark-blue-50);
+
+    transform: translateX(100%);
+    transition: transform .8s;
+}
+
+.navbar-responsive.active{
+    transform: translateX(0%);
+}
+
+.navbar-responsive__conteiner{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.navbar-responsive__conteiner .navbar-responsive__header{
+    width: 90%;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 40px 0px;
+}
+
+.navbar-responsive__conteiner .navbar-responsive__footer{
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+    width: 100%;
+}
+
+.navbar-responsive__conteiner .navbar-responsive__footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.navbar-responsive__conteiner .navbar-responsive__footer ul li{
+    list-style: none;
+}
+
+.navbar-responsive__conteiner .navbar-responsive__header .btn-close-navbar{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    line-height: 0px;
+}
+.navbar-responsive__conteiner .navbar-responsive__content{
+    width: 90%;
+    margin: auto;
+}
+.navbar-responsive__conteiner .navbar-responsive__content .links .links__item{
+    list-style: none;
+}
+.navbar-responsive__conteiner .navbar-responsive__content .links .links__item .link{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 25px 0px;
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+    border-bottom: 1px solid var(--grayish-blue);
+}
+.navbar-responsive__conteiner .navbar-responsive__content .links .links__item:first-child .link{
+    border-top: 1px solid var(--grayish-blue);
+}
+
+.navbar-responsive__conteiner .navbar-responsive__content .links .links__item .link--login{
+    border: 2px solid white;
+    padding: 10px 0px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+@media only screen and (min-width:830px) {
+    .navbar-responsive{
+        display: none;
+    }
+}

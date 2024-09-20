@@ -58,9 +58,15 @@
     border: none;
     outline: none;
     line-height: 0px;
+    cursor: pointer;
 }
 
 @media only screen and (max-width:830px) {
+    .navbar__content{
+        width: 90%;
+
+        padding: 40px 0px;
+    }
     .navbar__content .links{
         display: none;
     }

@@ -27,6 +27,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
 
     border-bottom: .8px solid var(--grayish-blue);
     cursor: pointer;
@@ -79,4 +80,24 @@
     border-radius: 5px;
     padding: 15px 20px;
     display: inline-block;
+}
+
+@media only screen and (max-width:768px) {
+    .accordion{
+        width: 100%;
+    }
+    .accordion__item .question{
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width:425px) {
+    .accordion__item .question{
+        font-size: .8rem;
+        padding-right: 0px;
+    }
+    .accordion__item .answer{
+        font-size: .8rem;
+        padding: 18px 0px;
+    }
 }

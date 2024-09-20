@@ -96,3 +96,28 @@
     background-color: white;
     border: 2px solid var(--soft-red);
 }
+
+@media only screen and (max-width:768px) {
+    .contact__conteiner{
+        width: 80%;
+    }
+    .contact__conteiner .title{
+        font-size: 1.2rem;
+    }
+    .contact__form{
+        grid-template-columns: 1fr;
+    }
+
+    .contact__form .form__email .input .email{
+        padding: 15px;
+        font-size: .8rem;
+    }
+    .contact__form .form__email .error{
+        font-size: .6rem;
+    }
+    .contact__form .form_btn{
+        font-size: .8rem;
+        padding: 15px;
+        font-weight: 400;
+    }
+}

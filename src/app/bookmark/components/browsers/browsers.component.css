@@ -42,7 +42,7 @@
     outline: none;
     background-color: var(--soft-blue);
     padding: 11px 26px;
-    font-size: 1rem;
+    font-size: .9rem;
     font-weight: 500;
     border-radius: 5px;
     color: white;
@@ -65,4 +65,22 @@
 
 .browser--opera{
     margin-top: 80px;
+}
+
+@media only screen and (max-width: 768px) {
+    .browsers{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-top: 10px;
+    }
+    .browser .browser__details .name{
+        font-size: 1.1rem;
+    }
+    .browser .browser__download .btn{
+        width: 100%;
+        font-size: .8rem;
+    }
+    .browser--firefox,.browser--opera{
+        margin-top: 0px;
+    }
 }

@@ -26,3 +26,13 @@
     margin-top: 20px;
     margin-bottom: 30px;
 }
+
+@media only screen and (max-width:768px) {
+    .main .section .section__subTitle{
+        font-size: 1.2rem;
+    }
+    .main .section .section__paragraph{
+        width: 100%;
+        font-size: .8rem;
+    }
+}

@@ -75,7 +75,6 @@
 
 .hero__ilustration .ilustration .ilustration__content .img{
     width: 80%;
-
 }
 
 .hero__ilustration .ilustration .ilustration__content .blob{
@@ -84,4 +83,55 @@
     right: 0px;
     bottom: -50px;
     z-index: -1;
+}
+
+@media only screen and (max-width:1024px) {
+    .hero{
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+
+        
+    }
+
+    .hero__texts .title{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    
+    .hero__texts .paragraph{
+        font-size: .8rem;
+        text-align: center;
+    }
+
+    .hero__texts .links{
+        justify-content: space-between;
+        gap: 15px;
+    }
+    .hero__texts .links .link{
+        font-size: .8rem;
+        padding: 15px;
+        width: 100%;
+    }
+    .hero__ilustration .ilustration{
+        width: 100%;
+    }
+
+    .hero__ilustration .ilustration .ilustration__content .img{
+        width: 80%;
+    }
+
+    .hero__ilustration .ilustration .ilustration__content .blob{
+        right: -20%;
+        bottom: -60px;
+    }
+}
+@media only screen and (max-width:425px){
+    .hero__ilustration .ilustration .ilustration__content .img{
+        width: 100%;
+    }
+    .hero__ilustration .ilustration .ilustration__content .blob{
+        width: 90%;
+        bottom: 0px;
+    }
 }

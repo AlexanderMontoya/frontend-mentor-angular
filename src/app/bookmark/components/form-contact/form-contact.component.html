@@ -1,0 +1,26 @@
+<div class="contact">
+    <div class="contact__conteiner">
+        <div class="users">35,000+ ALREADY JOINED</div>
+
+        <h2 class="title">Stay up-to-date with what we’re doing</h2>
+
+        <form class="contact__form" [formGroup]="formContact" autocomplete="off" (ngSubmit)="onSubmit()">
+
+            <div class="form__email" 
+            [class.email_error]="isValidField('email')">
+                <div class="input">
+                    <input type="email" 
+                    placeholder="Enter your email address" class="email" 
+                    formControlName="email" maxlength="40">
+                    
+                    <img src="./assets/images/icon-error.svg" alt="" width="25" class="icon_error" *ngIf="isValidField('email')">
+                </div>
+                <div class="error" *ngIf="isValidField('email')">
+                    {{ getFieldError('email') }}
+                </div>
+            </div>
+            
+            <button type="submit" class="form_btn">Contact Us</button>
+        </form>
+    </div>
+</div>

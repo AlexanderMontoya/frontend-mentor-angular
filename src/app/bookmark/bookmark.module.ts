@@ -8,6 +8,8 @@ import { HeroComponent } from './components/hero/hero.component';
 import { FeaturesComponent } from './components/features/features.component';
 import { BrowsersComponent } from './components/browsers/browsers.component';
 import { QuestionsComponent } from './components/questions/questions.component';
+import { FormContactComponent } from './components/form-contact/form-contact.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -16,13 +18,17 @@ import { QuestionsComponent } from './components/questions/questions.component';
     HeroComponent,
     FeaturesComponent,
     BrowsersComponent,
-    QuestionsComponent
+    QuestionsComponent,
+    FormContactComponent
   ],
   imports: [
     CommonModule,
     BookmarkRoutingModule,
 
-    SharedModule
+    SharedModule,
+
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class BookmarkModule { }

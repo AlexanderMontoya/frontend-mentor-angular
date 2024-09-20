@@ -35,6 +35,10 @@
     text-decoration: none;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+    border: 2px solid transparent;
+
+    transition: border .5s, background-color .5s, color .5s ;
 }
 
 .hero__texts .links .link--chrome{
@@ -44,6 +48,18 @@
 
 .hero__texts .links .link--firefox{
     background-color: #E0E0E0;
+}
+
+.hero__texts .links .link--chrome:hover{
+    border: 2px solid var(--soft-blue);
+    color: var(--soft-blue);
+    background-color: transparent;
+}
+
+.hero__texts .links .link--firefox:hover{
+    border: 2px solid var(--grayish-blue);
+    color: var(--grayish-blue);
+    background-color: transparent;
 }
 
 .hero__ilustration{

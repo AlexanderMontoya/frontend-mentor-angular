@@ -29,12 +29,25 @@
 .navbar__content .links .links__item .link{
     text-decoration: none;
     color: var(--very-dark-blue);
+    font-size: .9rem;
+    transition: color .5s;
+}
+
+.navbar__content .links .links__item .link:hover{
+    color: var(--soft-red);
 }
 
 .navbar__content .links .links__item .link--login{
-    padding: 10px 20px;
+    padding: 15px 31px;
     background-color: var(--soft-red);
-    font-weight: 500;
     color: white;
+    border: 2px solid transparent;
     border-radius: 5px;
+
+    transition: border .5s, background-color .5s;
+}
+
+.navbar__content .links .links__item .link--login:hover{
+    background-color: white;
+    border: 2px solid var(--soft-red);
 }

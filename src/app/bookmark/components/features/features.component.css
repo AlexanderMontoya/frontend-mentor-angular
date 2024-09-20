@@ -24,6 +24,12 @@
     cursor: pointer;
 
     border-bottom: 1px solid var(--grayish-blue);
+    
+    transition: color .5s;
+}
+
+.btn_feature:hover{
+    color: var(--soft-red);
 }
 
 .btn_feature.selected{

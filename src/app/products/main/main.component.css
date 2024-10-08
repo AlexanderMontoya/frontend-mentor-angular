@@ -1,0 +1,16 @@
+.main{
+    width: 100%;
+    overflow: hidden;
+
+    background-color: var(--rose-50);
+}
+
+.products{
+    width: 85%;
+    margin: auto;
+    padding: 60px 0px;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}

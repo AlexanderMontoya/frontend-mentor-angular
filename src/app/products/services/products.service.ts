@@ -11,5 +11,12 @@ export class ProductsService {
 
   constructor() { }
 
+  public subtractProduct(id:number):Product{
+    const indexProduct = this.listProducts.findIndex(p=>p.id === id)
+
+    this.listProducts[indexProduct].quantity -= 1
+
+    return this.listProducts[indexProduct]
+  }
 
 }

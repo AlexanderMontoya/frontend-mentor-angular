@@ -4,6 +4,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    
+
+    scrollbar-width: thin;
+    scrollbar-color: var(--rose-500) var(--rose-100);
 }
 
 :root{
@@ -22,6 +27,10 @@
     --font-weight-semibold: 600;
 
     font-size: 16px;
+}
+
+.order-confirmed{
+    overflow: hidden;
 }
 
 body, button{

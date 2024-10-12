@@ -1,6 +1,11 @@
 <main class="main">
     <section class="products">
         <products-list></products-list>
-        <products-cart></products-cart>
+        <products-cart (confirmOrder)="confirmOrderOnCart($event)"></products-cart>
     </section>
+    
+    @if(confirmOrder){
+        <products-confirm-order (newOrder)="startNewOrder()"></products-confirm-order>
+    }
+    
 </main>

@@ -1,0 +1,22 @@
+<div class="list-order">
+    @for( product of getOrder() ; track product){
+        <div class="cartProduct">
+            <div class="cartProduct__details">
+                <img [src]="product.image.thumbnail" [alt]="product.name" width="50" class="image">
+                <div class="details">
+                    <div class="name">{{ product.name }}</div>
+                    <div class="cost">
+                        <div class="quantity">{{ product.quantity }}x</div>
+                        <div class="price"> {{'@ ' + (product.price | price) }}</div>
+                    </div>    
+                </div>
+                
+            </div>
+            <div class="total-price">{{ (product.price * product.quantity) | price }}</div>
+        </div>
+    }
+</div>
+<div class="total">
+    <span>Order Total</span>
+    <div class="total__price">{{ getTotalCart() | price }}</div>
+</div>

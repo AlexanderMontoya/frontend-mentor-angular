@@ -7,7 +7,7 @@
                 <div class="product">
                     <div class="product__image">
                         <div class="image" [class.select]="inTheCart(product.id)">
-                            <img [src]="product.image.desktop" alt="" width="100" class="img">    
+                            <img [src]="product.image.desktop" alt="" width="100" class="img">
                         </div>
                         
                         <div class="add_cart">
@@ -37,7 +37,6 @@
                         <div class="category">{{ product.category }}</div>
                         <div class="name">{{ product.name }}</div>
                         <div class="price">${{ product.price }}</div>
-                        <div class="quantity">{{ product.quantity }}</div>
                     </div>
                 </div>
             }

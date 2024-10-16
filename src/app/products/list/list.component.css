@@ -78,85 +78,22 @@
     font-weight: var(--font-weight-semibold);
 }
 
-
-/*PARA OTRO COMPONENTE*/
-.add_cart{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-
-    position: absolute;
-    bottom:-20px
-}
-.add_cart .btn{
-    padding: 15px 25px;
-    border-radius: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
-    font-weight: var(--font-weight-semibold);
-
-    background-color: white;
-    border: 1.8px solid var(--rose-300);
-    cursor: pointer;
-
-    transition: border .5s, color .5s;
-
-    gap: 10px;
-}
-
-.add_cart .btn:hover{
-    border: 1.8px solid var(--color-red);
-    color: var(--color-red);
-}
-
-.add_cart .btns-quantity{
-    width: 169.86px;
-    padding: 15px 25px;
-    border-radius: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1rem;
-
-    background-color: var(--color-red);
-}
-
 @media only screen and (max-width:425px){
     .product__image{
         margin-bottom: 30px;
     }
-    .add_cart .btn, .add_cart .btns-quantity{
-        padding: 12px 20px;
-    }
 }
 
-.add_cart .btns-quantity .quantity{
-    color: white;
-}
-
-.add_cart .btns-quantity .btn-q{
+.message{
+    grid-column: span 3;
+    padding: 20px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3px;
-    height: 18px;
-    border-radius: 50%;
-    background-color: transparent;
-    outline: none;
-    border: 1px solid white;
-    cursor: pointer;
-
-    transition: background-color .7s;
+    color: white;
+    font-weight: var(--font-weight-semibold);
 }
-
-.add_cart .btns-quantity .btn-q:hover{
-    background-color: white;
-}
-
-.add_cart .btns-quantity .btn-q:hover svg{
-    fill: var(--color-red);
+.message.text{
+    background-color: var(--rose-300);
+    border-radius: 10px;
 }

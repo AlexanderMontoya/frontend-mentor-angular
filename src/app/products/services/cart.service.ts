@@ -35,13 +35,13 @@ export class CartService {
   }
 
   public subtractToCart(id_product:number):void{
-    const itemProduct = this.cartProducts.findIndex(p=>p.id == id_product)
+    const itemProduct = this.cartProducts.findIndex(p=>p.id === id_product)
     if(itemProduct != -1){
 
       this.cartProducts[itemProduct].quantity -= 1
 
       if(this.cartProducts[itemProduct].quantity == 0){
-        this.removeProductToCart(itemProduct)
+        this.removeProductToCart(id_product)
       }
       
     }

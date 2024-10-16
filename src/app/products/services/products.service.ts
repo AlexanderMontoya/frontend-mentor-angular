@@ -7,7 +7,7 @@ import { products } from '../../data/data';
 })
 export class ProductsService {
 
-  public listProducts:Product[] = [...products]
+  public listProducts:Product[] = []
 
   constructor() { }
 
